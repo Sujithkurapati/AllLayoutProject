@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <TextView android:id="@+id/TextView01"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:text="First Name:"
+              android:width="100dp" />
+
+    <EditText android:id="@+id/RelEditText01" android:layout_width="120dp"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@+id/TextView01"
+              android:layout_below="@+id/RelativeLayout01" />
+
+    <EditText android:id="@+id/RelEditText02" android:layout_width="120dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/RelEditText01"
+              android:layout_alignLeft="@+id/RelEditText01" />
+
+    <TextView android:id="@+id/TextView02"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:text="Second Name:"
+              android:width="100dp" android:layout_below="@+id/RelEditText01"
+              android:layout_toLeftOf="@+id/RelEditText02" />
+
+    <Button android:text="Submit" android:id="@+id/RelSubmit"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_below="@id/RelEditText02"
+            android:layout_alignLeft="@id/RelEditText02" />
+
+    <Button android:text="Reset" android:id="@+id/RelButton"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/RelSubmit"
+            android:layout_toRightOf="@+id/RelEditText02"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Print here"
+            android:id="@+id/ReltextView"
+            android:layout_below="@+id/RelSubmit"
+            android:layout_alignRight="@+id/RelEditText02"
+            android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

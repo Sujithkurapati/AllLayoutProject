@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+
+    <TableRow android:id="@+id/TableRow01">
+        <TextView android:id="@+id/TextView01" android:text="First Name:"
+                  android:width="100px" />
+        <EditText android:id="@+id/TabEditText01" android:width="220px" />
+    </TableRow>
+
+    <TableRow android:id="@+id/TableRow02">
+        <TextView android:id="@+id/TextView02" android:text="Second Name:" />
+        <EditText android:id="@+id/TabEditText02" />
+    </TableRow>
+
+    <TableRow android:id="@+id/TableRow03">
+        <Button android:id="@+id/TabButton01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Submit" />
+
+        <Button android:id="@+id/TabButton02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Reset"
+                android:width="100px" />
+    </TableRow>
+
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Print here"
+                android:id="@+id/TabtextView"
+                android:layout_column="0"/>
+    </TableRow>
+
+
+</TableLayout>
